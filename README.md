@@ -1,5 +1,6 @@
 # Project Structure
 
+```text
 cryptocurrency-price-monitoring/
 |
 |-- .github/
@@ -103,3 +104,4 @@ cryptocurrency-price-monitoring/
 |-- package.json
 |-- package-lock.json
 `-- README.md
+```
