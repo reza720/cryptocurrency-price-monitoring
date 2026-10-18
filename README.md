@@ -90,11 +90,6 @@ cryptocurrency-price-monitoring/
 |   |   |       |-- daily-standup-4.md
 |   |   |       |-- sprint-review.md
 |   |   |       `-- retrospective.md
-|   |   |
-|   |-- reviews/
-|   |   |-- sprint-1-review.md
-|   |   |-- sprint-2-review.md
-|   |   `-- sprint-3-review.md
 |   |
 |   `-- project/
 |       |-- project-overview.md
