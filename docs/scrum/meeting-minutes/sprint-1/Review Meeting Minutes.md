@@ -3,7 +3,7 @@
 ## Meeting Information
 - **Meeting Type:** Sprint Review Meeting
 - **Sprint:** Sprint 1
-- **Duration:** [Insert meeting duration]
+- **Duration:** 10 minutes
 - **Host:** Atifa Rahimi
 
 ## Participants
