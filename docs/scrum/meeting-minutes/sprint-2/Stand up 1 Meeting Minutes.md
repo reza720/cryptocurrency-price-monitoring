@@ -11,6 +11,7 @@
 - Reza Panahi
 - Ghulam Mahfoz Osmani
 - Ainullah Amery
+- Atifa Rahimi
 
 ## Meeting Objective
 The objective of the meeting was to review the team's progress on the first working day of Sprint 2, discuss any problems or blockers, and coordinate the tasks planned for the next working day.
