@@ -39,10 +39,10 @@ cryptocurrency-price-monitoring/
 |                                    
 |
 |-- docs/
-|   |-- requirements/
 |   |   |-- requirement-specification.md
-|   |   `-- user-stories.md
-|   |
+|   |   |-- user-stories.md
+|   |   |-- project-overview.md
+|   |   `-- team-structure.md
 |   |-- uml/
 |   |   |-- use-case-diagram.png
 |   |   |-- sequence-add-coin.png
@@ -54,14 +54,12 @@ cryptocurrency-price-monitoring/
 |   |   |-- product-backlog.xlsx
 |   |   |
 |   |   |-- sprint-backlogs/
-|   |   |   |-- sprint-1.xlsx
-|   |   |   |-- sprint-2.xlsx
-|   |   |   `-- sprint-3.xlsx
+|   |   |   |-- sprint-1.md
+|   |   |   |-- sprint-2.md
 |   |   |
 |   |   |-- burndown-charts/
 |   |   |   |-- sprint-1.png
 |   |   |   |-- sprint-2.png
-|   |   |   `-- sprint-3.png
 |   |   |
 |   |   |-- meeting-minutes/
 |   |   |   |-- sprint-1/
@@ -80,20 +78,7 @@ cryptocurrency-price-monitoring/
 |   |   |   |   |-- daily-standup-3.md
 |   |   |   |   |-- daily-standup-4.md
 |   |   |   |   |-- sprint-review.md
-|   |   |   |   `-- retrospective.md
-|   |   |   |
-|   |   |   `-- sprint-3/
-|   |   |       |-- sprint-planning.md
-|   |   |       |-- daily-standup-1.md
-|   |   |       |-- daily-standup-2.md
-|   |   |       |-- daily-standup-3.md
-|   |   |       |-- daily-standup-4.md
-|   |   |       |-- sprint-review.md
-|   |   |       `-- retrospective.md
-|   |
-|   `-- project/
-|       |-- project-overview.md
-|       `-- team-structure.md
+|   |   |   |   `-- retrospective.md      
 |
 |-- .gitignore
 |-- package.json
