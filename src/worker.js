@@ -1,7 +1,7 @@
-import { listCoins } from './coin.service.js';
-import { listEmails } from './email.service.js';
-import getCoinPrices from './coinLore.service.js';
-import sendEmail from './notification.service.js';
+import { listCoins } from './services/coin.service.js';
+import { listEmails } from './services/email.service.js';
+import getCoinPrices from './services/coinLore.service.js';
+import sendEmail from './services/notification.service.js';
 
 async function runWorker() {
 	console.log('Coin price monitoring started');
