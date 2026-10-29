@@ -1,23 +1,37 @@
-
 import { createInterface } from 'node:readline/promises';
 import { stdin, stdout } from 'node:process';
 import { z } from 'zod';
-import { updateEmail } from '../../src/services/email.service.js';
+import { updateCoin } from '../../src/services/coin.service.js';
 
 const rl = createInterface({ input: stdin, output: stdout });
 
-const emailSchema = z.object({
-	emailId: z.string().uuid('Invalid email UUID'),
-	address: z.email('Invalid email address'),
+const coinSchema = z.object({
+	coinId: z.string().uuid('Invalid coin UUID'),
+	coinLoreId: z.string().trim().min(1, 'CoinLore ID is required'),
+	symbol: z.string().trim().min(1, 'Symbol is required'),
+	name: z.string().trim().min(1, 'Name is required'),
+	minPrice: z.coerce.number().finite().nonnegative(),
+	maxPrice: z.coerce.number().finite().positive(),
+}).refine((data) => data.minPrice < data.maxPrice, {
+	message: 'Minimum price must be less than maximum price',
+	path: ['maxPrice'],
 });
 
 try {
-	const emailId = await rl.question('Email UUID: ');
-	const address = await rl.question('New email address: ');
+	const coinId = await rl.question('Coin UUID: ');
+	const coinLoreId = await rl.question('New CoinLore ID: ');
+	const symbol = await rl.question('New symbol: ');
+	const name = await rl.question('New name: ');
+	const minPrice = await rl.question('New minimum price: ');
+	const maxPrice = await rl.question('New maximum price: ');
 
-	const result = emailSchema.safeParse({
-		emailId: emailId.trim(),
-		address: address.trim(),
+	const result = coinSchema.safeParse({
+		coinId,
+		coinLoreId,
+		symbol,
+		name,
+		minPrice,
+		maxPrice,
 	});
 
 	if (!result.success) {
@@ -27,8 +41,8 @@ try {
 
 		process.exitCode = 1;
 	} else {
-		const { emailId, ...data } = result.data;
-		await updateEmail(emailId, data);
+		const { coinId, ...data } = result.data;
+		await updateCoin(coinId, data);
 	}
 } catch (error) {
 	console.error(error);

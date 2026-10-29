@@ -1,4 +1,3 @@
-
 import { createInterface } from 'node:readline/promises';
 import { stdin, stdout } from 'node:process';
 import { z } from 'zod';
