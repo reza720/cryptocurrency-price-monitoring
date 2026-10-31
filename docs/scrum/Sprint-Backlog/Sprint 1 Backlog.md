@@ -151,18 +151,3 @@ As Product Owner, I will continue to clarify requirements, prioritize the Produc
 
 I have reviewed the provided Sprint 1 backlog and documented the initial team activities and task assignments. Final acceptance of the sprint will depend on reviewing the completed work and confirming that it meets the agreed requirements.
 
-**Product Owner:** [Atifa Rahimi]  
-**Signature:** __________________________  
-**Date:** October 21, 2026  
-**Next Review:** Sprint 1 Review / Sprint 2 Planning
-
-## References
-
-- Product Backlog: `backlog/product-backlog.md`
-- Sprint Meeting Notes: 
-
----
-
-**Prepared by:** [Atifa Rahimi], Product Owner  
-**Report Date:** October 21, 2026  
-**Next Review:** To be confirmed
