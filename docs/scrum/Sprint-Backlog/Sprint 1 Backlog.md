@@ -3,7 +3,6 @@
 **Product Owner:** [Atifa Rahimi]  
 **Project:** Cryptocurrency Price Monitoring System  
 **Sprint:** Sprint 1  
-**Report Date:** October 21, 2026
 
 ---
 
